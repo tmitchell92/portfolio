@@ -14,7 +14,7 @@ Project.prototype.toHtml = function() {
 	// $newProject.addClass('draft');
 	// $newProject.data('category', this.category);
 
-  $newProject.find('h2').html(this.title);
+  $newProject.find('a').html(this.title);
   $newProject.find('a').attr('href', this.link);
   $newProject.find('.project-body').html(this.body);
 
