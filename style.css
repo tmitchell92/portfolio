@@ -1,7 +1,10 @@
 body{
   max-width:960px;
   margin: 0 auto;
-  background-color: rgb(95, 215, 103);
+}
+
+.nav-bar{
+  margin-top: 3%;
 }
 
 .nav-bar h1:first-child{
@@ -13,4 +16,17 @@ body{
   display: inline;
   width: 50px;
   text-align: center;
+}
+
+img{
+  position: absolute;
+  top:0px;
+  left:0px;
+  opacity: .5;
+  max-width: 100%;
+  z-index: -1;
+}
+
+.template{
+  display:none;
 }
