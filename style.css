@@ -7,15 +7,16 @@ body{
   margin-top: 3%;
 }
 
-.nav-bar h1:first-child{
-  margin-left: 22%;
+.nav-bar ul li{
+  display: none;
 }
 
-.nav-bar h1{
-   margin-left: 10%;
-  display: inline;
-  width: 50px;
-  text-align: center;
+.nav-bar:hover ul li{
+  display: block;
+  margin-right: .4em;
+  font-size: 1.5em;
+  padding: .5em .2em;
+  border-bottom: 1px solid #ccc;
 }
 
 img{
@@ -29,4 +30,20 @@ img{
 
 .template{
   display:none;
+}
+
+.fa-bars{
+  float: right;
+}
+
+@media only screen and (min-width: 640px){
+  .nav-bar ul li{
+    display: inline;
+  }
+  .nav-bar .fa-5x{
+    display:none;
+  }
+  .nav-bar:hover ul li{
+    display: none;
+  }
 }
