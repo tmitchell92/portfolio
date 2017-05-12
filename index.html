@@ -5,41 +5,49 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<title>Tim's Portfolio</title>
+  <script id="project-template" type="text/x-handlebars-template">
+  <article class="projects" data-projects="projects">
+    <div class="byline">
+      <header>
+        <address>
+          <a href="{{link}}">{{title}}</a>
+          </address>
+      </header>
+      <img src="{{image}}" class="project-images"/>
+      <section class="project-body">{{{body}}}</section>
+    </div>
+  </article>
+  </script>
 </head>
 
 <body>
 	<div id="nav-bar" class="nav-bar">
     <i class="fa fa-bars fa-5x" aria-hidden="true"></i>
     <ul>
-      <li>Home</li>
-      <li>Projects</li>
-      <li>About Me</li>
+      <li class="tab" data-tab="home">Home</li>
+      <li class="tab" data-tab="projects">Projects</li>
+      <li class="tab" data-tab="about-me">About Me</li>
     </ul>
 	</div>
-	<div id="home" class="home">
-		<h1>Home</h1>
-		<a href="https://github.com/tmitchell92">
-      <i class="fa fa-github fa-5x" aria-hidden="true"></i>
-    </a>
-	</div>
-  <h1>Projects</h1>
-	<section id="projects">
-		<article class="template" data-category="cat">
-			<div class="byline">
-				<header>
-					<address>
-            <a href="">Title</a>
-            </address>
-				</header>
-				<section class="project-body"></section>
-			</div>
-		</article>
-	</section>
-	<div id="about-me" class="about-me">
+	<div id="home" class="home tab-content" data-tab="home">
+    <img class="background" src="images/mountain.jpg" />
+    <p>
+      Timothy Mitchell
+    </p>
+    </div>
+	<section id="projects" data-tab="projects" class="tab-content">
+    <h1>Projects</h1>
+</section>
+	<div id="about-me" class="about-me tab-content" data-tab="about-me">
 		<h1>About Me</h1>
+
+    <i class="fa fa-github fa-5x" aria-hidden="true">
+      <a href="https://github.com/tmitchell92"></i></a>
 	</div>
-	<img src="mountain.jpg" />
+
+
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.8/handlebars.js"></script>
 	<script src="project-data.js"></script>
 	<script src="app.js"></script>
 </body>
