@@ -5,20 +5,13 @@ function Project(rawDataObj) {
   this.title = rawDataObj.title;
   this.link = rawDataObj.link;
   this.body = rawDataObj.body;
+  this.image = rawDataObj.image;
 }
 
 Project.prototype.toHtml = function() {
-  var $newProject = $('article.template').clone();
+  var templateRender = Handlebars.compile($('#project-template').html());
+  return templateRender(this);
 
-  $newProject.removeClass('template');
-	// $newProject.addClass('draft');
-	// $newProject.data('category', this.category);
-
-  $newProject.find('a').html(this.title);
-  $newProject.find('a').attr('href', this.link);
-  $newProject.find('.project-body').html(this.body);
-
-  return $newProject;
 };
 
 rawData.forEach(function(projectObject) {
@@ -28,3 +21,12 @@ rawData.forEach(function(projectObject) {
 projects.forEach(function(project) {
   $('#projects').append(project.toHtml());
 });
+
+var handleMainNav = function() {
+  $('#nav-bar').on('click', '.tab', function() {
+    $('.tab-content').hide();
+    $('#' + $(this).data('tab')).fadeIn();
+  });
+  $('#nav-bar .tab:first').click();
+}
+handleMainNav();
