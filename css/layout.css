@@ -1,0 +1,30 @@
+.background{
+  float:left;
+  margin-top:27%;
+  z-index: -1;
+  width:100%;
+}
+
+#projects article:last-child{
+  margin-bottom:10%;
+}
+
+#home h1 {
+  margin-top: 20%;
+}
+
+#projects h1, #about-me h1{
+  margin-top:49%;
+}
+
+.projects {
+  margin-top:5%;
+}
+
+.home p{
+  float:left;
+  font-size: 3em;
+  margin-top: -38%;
+  margin-left:5%;
+  color:black;
+}

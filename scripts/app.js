@@ -11,7 +11,6 @@ function Project(rawDataObj) {
 Project.prototype.toHtml = function() {
   var templateRender = Handlebars.compile($('#project-template').html());
   return templateRender(this);
-
 };
 
 rawData.forEach(function(projectObject) {
