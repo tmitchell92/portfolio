@@ -1,0 +1,16 @@
+*{
+  z-index: 1;
+}
+
+body{
+  max-width:960px;
+  margin: 0 auto;
+  background-color: rgb(28, 28, 28);
+  color:white;
+  font-family: verdana;
+}
+
+.project-images{
+  max-width: 500px;
+  height: auto;
+}
