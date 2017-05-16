@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 	<meta charset="UTF-8">
 	<title>Tim's Portfolio</title>
@@ -12,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<script id="project-template" type="text/x-handlebars-template">
 		<article class="projects" data-projects="projects">
 			<address>
@@ -32,13 +32,16 @@
 			<li class="tab tab-about-me" data-tab="about-me">About Me</li>
 		</ul>
 	</nav>
+
 	<section id="home" class="home tab-content" data-tab="home">
 		<h1>Timothy Mitchell</h1>
     <h2>Software Developer</h2>
 	</section>
+
 	<section id="projects" data-tab="projects" class="projects tab-content">
 		<h1>Projects</h1>
 	</section>
+
 	<section id="about-me" class="about-me tab-content" data-tab="about-me">
 		<h1>About Me</h1>
 		<a href="https://github.com/tmitchell92">
@@ -47,10 +50,10 @@
 			I am writing text, hello world dkljadsfljkadsflkjdslkfjjdasjkldsf;asdfjlfjkldfsljksflkj
 		</p>
 	</section>
+
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"                 integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.8/handlebars.js"></script>
-	<script src="scripts/app.js"></script>
+	<script src="/scripts/index.js"></script>
   <script>Project.fetchAll()</script>
 </body>
-
 </html>
