@@ -17,7 +17,8 @@ body{
 
 h1 {
   font-family: 'Rubik Mono One', sans-serif;
-  font-size: 5em;
+  font-size: 2em;
+  width:100%;
 }
 
 a:link { color:#1eeb33; text-decoration:none; font-weight:normal; }
@@ -31,4 +32,12 @@ h2{
 
 p{
   font-family: 'Dosis', sans-serif;
+}
+
+@media only screen and (min-width: 640px){
+  h1 {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 5em;
+    width:100%;
+  }
 }
