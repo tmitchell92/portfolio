@@ -16,7 +16,10 @@
 
 .nav-bar:hover ul li{
   display: block;
-  background:black;
+}
+
+.tab-home:hover, .tab-projects:hover, .tab-about-me:hover, h1{
+  color:#1eeb33;
 }
 
 @media only screen and (min-width: 640px){
@@ -40,11 +43,11 @@
     width:100%;
   }
 
-  #home p{
-    float:left;
-    margin-top:-44%;
-    margin-left:32%;
+  #home h1{
+    margin: 0 auto;
     z-index: 1;
+    margin-top: 20%;
+text-align:center;
   }
 
   #projects h1, #about-me h1{

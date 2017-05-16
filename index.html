@@ -4,10 +4,13 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Tim's Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/base.css">
   <link rel="stylesheet" type="text/css" href="css/layout.css">
   <link rel="stylesheet" type="text/css" href="css/modules.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script id="project-template" type="text/x-handlebars-template">
 		<article class="projects" data-projects="projects">
@@ -24,14 +27,15 @@
 	<nav id="nav-bar" class="nav-bar">
 		<i class="fa fa-bars fa-5x" aria-hidden="true"></i>
 		<ul>
-			<li class="tab" data-tab="home">Home</li>
-			<li class="tab" data-tab="projects">Projects</li>
-			<li class="tab" data-tab="about-me">About Me</li>
+			<li class="tab tab-home" data-tab="home">Home</li>
+			<li class="tab tab-projects" data-tab="projects">Projects</li>
+			<li class="tab tab-about-me" data-tab="about-me">About Me</li>
 		</ul>
 	</nav>
 	<section id="home" class="home tab-content" data-tab="home">
-		<img class="background" src="images/mountain.jpg" />
-		<p>Timothy Mitchell</p>
+		<!-- <img class="background" src="images/mountain.jpg" /> -->
+		<h1>Timothy Mitchell</h1>
+    <h2>Software Developer</h2>
 	</section>
 	<section id="projects" data-tab="projects" class="projects tab-content">
 		<h1>Projects</h1>

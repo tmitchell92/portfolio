@@ -7,10 +7,28 @@ body{
   margin: 0 auto;
   background-color: rgb(28, 28, 28);
   color:white;
-  font-family: verdana;
+  font-family: 'Rubik Mono One', sans-serif;
 }
 
 .project-images{
   max-width: 500px;
   height: auto;
+}
+
+h1 {
+  font-family: 'Rubik Mono One', sans-serif;
+  font-size: 5em;
+}
+
+a:link { color:#1eeb33; text-decoration:none; font-weight:normal; }
+a:visited { color: #1eeb33; text-decoration:none; font-weight:normal; }
+a:hover { color: #1eeb33; text-decoration:underline; font-weight:normal; }
+a:active { color: #1eeb33; text-decoration:none; font-weight:normal; }
+
+h2{
+  text-align: center;
+}
+
+p{
+  font-family: 'Dosis', sans-serif;
 }
