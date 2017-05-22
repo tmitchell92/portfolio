@@ -18,14 +18,6 @@ var app = app || {};
     return templateRender(this);
   };
 
-  Project.handleMainNav = function() {
-    $('#nav-bar').on('click', '.tab', function() {
-      $('.tab-content').hide();
-      $('#' + $(this).data('tab')).fadeIn();
-    });
-    $('#nav-bar .tab:first').click();
-  }
-
   Project.loadAll = rows => {
     Project.all = rows.map(ele => new Project(ele));
   };
@@ -59,7 +51,6 @@ var app = app || {};
   },[])
   }
 
-  Project.handleMainNav();
   Project.numWordsAll();
   module.Project = Project
 })(app);
