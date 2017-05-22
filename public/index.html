@@ -27,9 +27,9 @@
 	<nav id="nav-bar" class="nav-bar">
 		<i class="fa fa-bars fa-5x" aria-hidden="true"></i>
 		<ul>
-			<li class="tab tab-home" data-tab="home">Home</li>
-			<li class="tab tab-projects" data-tab="projects">Projects</li>
-			<li class="tab tab-about-me" data-tab="about-me">About Me</li>
+			<li class="tab tab-home" data-tab="home"><a href="/">Home</a></li>
+			<li class="tab tab-projects" data-tab="projects"><a href="/projects">Projects</a></li>
+			<li class="tab tab-about-me" data-tab="about-me"><a href="/about">About Me</a></li>
 		</ul>
 	</nav>
 
@@ -52,8 +52,13 @@
 	</section>
 
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"                 integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.8/handlebars.js"></script>
-	<script src="/scripts/index.js"></script>
+  <script src="/scripts/index.js"></script>
   <script>app.Project.fetchAll()</script>
+  <script src="/scripts/controllers/aboutController.js"></script>
+  <script src="/scripts/controllers/homeController.js"></script>
+  <script src="/scripts/controllers/projectController.js"></script>
+  <script type="text/javascript" src='/scripts/controllers/routes.js'></script>
 </body>
 </html>
