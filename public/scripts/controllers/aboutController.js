@@ -8,6 +8,8 @@ var app = app || {};
   aboutController.init = function(){
     $('.tab-content').hide();
     $('#about-me').fadeIn();
+
+    app.repos.requestRepos(app.repoView.index)
   }
 
   module.aboutController = aboutController;
