@@ -21,6 +21,18 @@
 			<p class="project-body">{{{body}}}</p>
 		</article>
 	</script>
+  <script id="repo-template" type="text/x-handlebars-template">
+    <li>
+         <a href="{{html_url}}" target="_blank"><h3>{{name}}</h3></a>
+         <p>Description: {{description}}</p>
+         <p>Language: {{language}}</p>
+         <p>Created: {{created_at}}</p>
+         <p>Last updated: {{updated_at}}</p>
+         {{#if watchers_count}}
+           <p>{{watchers_count}} watching this repo</p>
+         {{/if}}
+  </script>
+
 </head>
 
 <body>
@@ -49,16 +61,23 @@
 		<p>
 			I am writing text, hello world dkljadsfljkadsflkjdslkfjjdasjkldsf;asdfjlfjkldfsljksflkj
 		</p>
+    <ul>
+    </ul>
 	</section>
 
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"                 integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.8/handlebars.js"></script>
+
+  <script src="/scripts/githubToken.js"></script>
+
   <script src="/scripts/index.js"></script>
   <script>app.Project.fetchAll()</script>
   <script src="/scripts/controllers/aboutController.js"></script>
   <script src="/scripts/controllers/homeController.js"></script>
   <script src="/scripts/controllers/projectController.js"></script>
+  <script src="/scripts/repo.js"></script>
+  <script src="/scripts/repoView.js"></script>
   <script type="text/javascript" src='/scripts/controllers/routes.js'></script>
 </body>
 </html>
